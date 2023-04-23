@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSockets con Express y Socket.io</title> 
+</head>
+<body>
+  <h1>Funcionando uwu</h1>
+  <h2 id="greeting"></h2>
+  <hr>
+  <p id="text"></p>
+  <form method="POST" id="form">
+    <span>Enter your name</span>
+    <input name="name" id="name" type="text">
+    <button type="submit">Enviar</button>
+  </form>
+  <hr>
+  <button id="emit-to-server">Presioname</button>
+
+  <button id="emit-to-last">Greeting the last connected</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/index.js"></script> 
+</body>
+</html>
